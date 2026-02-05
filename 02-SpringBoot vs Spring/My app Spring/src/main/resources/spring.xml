@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!-- bean definitions here -->
+<!--    <bean id="dev" class="org.example.dev">-->
+<!--        <property name="age" value="19"></property>-->
+<!--    </bean>-->
+    <bean id="dev" class="org.example.dev">
+        <property name="comp" ref="comp"></property>
+    </bean>
+<!--    <bean id="lap1" class="org.example.Laptop">-->
+
+<!--    </bean>-->
+<!--    <bean id="app" class="org.example.App">-->
+<!--        <property name="" ref="lap1"></property>-->
+<!--    </bean>-->
+
+    <bean id="lap1" class="org.example.Laptop">
+
+    </bean>
+    <bean name="comp" class="org.example.Laptop">
+
+    </bean>
+
+</beans>
