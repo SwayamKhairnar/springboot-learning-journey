@@ -1,17 +1,40 @@
-# IntelliJ IDEA
+# =========================
+# IDE
+# =========================
 .idea/
+.vscode/
 
-# Maven
-target/
-
-# Eclipse
-.classpath
-.project
-.settings/
-
-# OS files
+# =========================
+# OS Files
+# =========================
 .DS_Store
 Thumbs.db
 
+# =========================
 # Logs
+# =========================
 *.log
+npm-debug.log*
+
+# =========================
+# Java / Spring Boot
+# =========================
+target/
+*.class
+*.jar
+*.war
+
+# =========================
+# Node / React / Vite
+# =========================
+node_modules/
+dist/
+build/
+.vite/
+
+# =========================
+# Environment
+# =========================
+.env
+.env.local
+.env.*
