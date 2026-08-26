@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="
+         http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!-- Bean definitions -->
+    <bean id="laptop" class="com.swayam.springxml.Laptop" />
+    <bean id="desktop" class="com.swayam.springxml.Desktop" />
+
+    <!-- Dev bean with setter dependency injection -->
+    <bean id="dev" class="com.swayam.springxml.Dev">
+        <property name="comp" ref="laptop" />
+        <property name="age" value="21" />
+    </bean>
+
+</beans>

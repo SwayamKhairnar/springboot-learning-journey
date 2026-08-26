@@ -1,8 +1,13 @@
 # =========================
-# IDE
+# IDE & Editors
 # =========================
 .idea/
 .vscode/
+*.iml
+.factorypath
+.classpath
+.project
+.settings/
 
 # =========================
 # OS Files
@@ -17,9 +22,11 @@ Thumbs.db
 npm-debug.log*
 
 # =========================
-# Java / Spring Boot
+# Java / Spring Boot / Build
 # =========================
 target/
+out/
+bin/
 *.class
 *.jar
 *.war
@@ -33,7 +40,7 @@ build/
 .vite/
 
 # =========================
-# Environment
+# Environment & Secrets
 # =========================
 .env
 .env.local
